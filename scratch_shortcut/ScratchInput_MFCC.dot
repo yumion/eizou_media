@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="X[0] <= -434.07\ngini = 0.795\nsamples = 68\nvalue = [12, 16, 16, 13, 11]\nclass = double_swipe"] ;
+1 [label="X[24] <= -515.644\ngini = 0.744\nsamples = 56\nvalue = [0, 16, 16, 13, 11]\nclass = double_swipe"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="X[5] <= -455.071\ngini = 0.579\nsamples = 28\nvalue = [0, 1, 15, 2, 10]\nclass = single_swipe"] ;
+1 -> 2 ;
+3 [label="gini = 0.459\nsamples = 14\nvalue = [0, 1, 1, 2, 10]\nclass = flip"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 14\nvalue = [0, 0, 14, 0, 0]\nclass = single_swipe"] ;
+2 -> 4 ;
+5 [label="X[373] <= 11.385\ngini = 0.556\nsamples = 28\nvalue = [0, 15, 1, 11, 1]\nclass = double_swipe"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 12\nvalue = [0, 12, 0, 0, 0]\nclass = double_swipe"] ;
+5 -> 6 ;
+7 [label="gini = 0.484\nsamples = 16\nvalue = [0, 3, 1, 11, 1]\nclass = circle"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 12\nvalue = [12, 0, 0, 0, 0]\nclass = double_tap"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
